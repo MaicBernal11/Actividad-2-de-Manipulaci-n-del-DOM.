@@ -44,8 +44,8 @@ body {
 button {
   padding: 14px 20px;
   border: none;
-  background: #013889;
-  color: #fff;
+  background: #0062b3;
+  color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
@@ -81,7 +81,7 @@ button:hover {
 .box {
   width: 200px;
   height: 200px;
-  background-color: #013889;
+  background-color: #0062b3;
   margin: 0 auto;
   border-radius: 0;
   transition: all 0.5s ease;
