@@ -66,6 +66,46 @@ function right() {
 
 
 
+//MANIPULACION DE CONTENIDOS
+
+
+function title() {
+
+    const title = document.getElementById("mainTitle");
+    title.textContent = prompt("Escribe el nuevo título:");
+
+}
+
+
+function parrafo() {
+
+    const paragraph = document.getElementById("mainParagraph");
+    paragraph.textContent = prompt("Escribe el nuevo párrafo");
+
+}
+
+function addParagraph() {
+
+
+    const parrafo = document.createElement("p");
+    parrafo.innerHTML = prompt("Escribe el texto del nuevo párrafo:");
+    document.getElementById("extraParagraphs").appendChild(parrafo);
+
+
+
+}
+
+
+function removeParagraph() {
+
+    const p = document.getElementById("extraParagraphs");
+    const ultimo = p.lastElementChild; 
+    p.removeChild(ultimo);
+}
+
+
+
+
 
 
 
@@ -78,5 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("btnMoveDown").addEventListener("click", down);
     document.getElementById("btnMoveLeft").addEventListener("click", left);
     document.getElementById("btnMoveRight").addEventListener("click", right);
+    document.getElementById("btnChangeTitle").addEventListener("click", title);
+    document.getElementById("btnChangeParagraph").addEventListener("click", parrafo);
+    document.getElementById("btnAddParagraph").addEventListener("click", addParagraph);
+    document.getElementById("btnRemoveParagraph").addEventListener("click", removeParagraph);
 });
 
