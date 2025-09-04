@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+
+
 /* Reset sencillo */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -21,17 +24,17 @@ body {
 /* Columna izquierda */
 .left {
   flex: 1;
-  background: #fff;
+  background: #10131A;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
   text-align: center;
 }
 
 .left h2,
 .right h2 {
   padding: 20px;
-  color: #013889;
+  color: #01e6ff;
   font-size: 30px;
 }
 
@@ -46,17 +49,18 @@ button {
   border: none;
   background: #0062b3;
   color: #ffffff;
+  font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
   min-width: 160px;
   margin: 16px;
-  border: 2px solid #013889;
+  border: 1px solid #3eefff;
 
 }
 
 button:hover {
-  background: #fff;
+  background: #ffffff;
   color: #013889;
   border: 2px solid #013889;
   border-radius: 0;
@@ -66,15 +70,27 @@ button:hover {
 /* Columna derecha */
 .right {
   flex: 1;
-  background: #fff;
+  background: #10131A;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .right h2 {
   margin-bottom: 20px;
+}
+
+.right h1, p{
+
+  color: #f4f6ff;
+
+}
+
+.right a{
+
+  color: #01e6ff;
+
 }
 
 /* Figura base */
@@ -88,15 +104,21 @@ button:hover {
   margin-top: 20px;
 }
 
-hr{
-    margin: 40px 0;
+hr {
+  margin: 40px 0;
 }
 
-img{
-    margin-top: 30px;
+.oculta {
+
+  display: none;
+
 }
 
-#mainLink{
-    margin-top: 20px;
-    display: block;
+img {
+  margin-top: 30px;
+}
+
+#mainLink {
+  margin-top: 20px;
+  display: block;
 }
